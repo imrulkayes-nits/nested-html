@@ -1,0 +1,57 @@
+/*==================================*/
+        /*  BASIC SETUP */
+/*==================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background: #fff;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+}
+
+ /*===== HEADER SECTION =====*/
+header {
+    .navigation {
+        background: linear-gradient(to top, #7a2525, #722323);
+        .logo-wrapper {
+            margin-top: 3rem;
+        }
+        .menu-bars {
+            margin-top: 2rem;
+            .menu {
+                .navbar-nav {
+                    .nav-item {
+                        margin-left: 1rem;
+                        .nav-link {
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                            color: #fff;
+                            padding: .5rem 1.5rem;
+                        }
+                    }
+                }
+                .searchbar {
+                    color: #fff;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+/*===== BANNER SECTION =====*/
+#banner {
+    background: linear-gradient();
+    .promo-title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: #fff;
+
+    }
+}

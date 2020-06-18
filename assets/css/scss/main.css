@@ -1,0 +1,50 @@
+/*==================================*/
+/*  BASIC SETUP */
+/*==================================*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #fff;
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+}
+
+header .navigation {
+  background: -webkit-gradient(linear, left bottom, left top, from(#7a2525), to(#722323));
+  background: linear-gradient(to top, #7a2525, #722323);
+}
+
+header .navigation .logo-wrapper {
+  margin-top: 3rem;
+}
+
+header .navigation .menu-bars {
+  margin-top: 2rem;
+}
+
+header .navigation .menu-bars .menu .navbar-nav .nav-item {
+  margin-left: 1rem;
+}
+
+header .navigation .menu-bars .menu .navbar-nav .nav-item .nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  padding: .5rem 1.5rem;
+}
+
+header .navigation .menu-bars .menu .searchbar {
+  color: #fff;
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=main.css.map */
