@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-image: url(./scss/css/images/bg-img.png);
+  background: #ffffff;
   font-family: 'Poppins', 'Open Sans', sans-serif;
   font-size: 1.3rem;
 }
