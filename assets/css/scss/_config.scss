@@ -1,0 +1,195 @@
+/*==================================*/
+        /*  BASIC SETUP */
+/*==================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-image: url(./scss/css/images/bg-img.png);
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+}
+section {
+    padding: 6rem 0;
+}
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: $dark-color;
+    font-weight: 600;
+}
+/*==================================*/
+    /*  REUSABLE COMPONENTS */
+/*==================================*/
+$primary-color: #fff;
+$secondary-color: #615f5f;
+$dark-color: #000000;
+$bg-color: linear-gradient(to bottom, #cc3939, #982a2a);
+
+/*  icon  */
+%icon-img {
+    width: 5.5rem;
+    height: 6rem;
+}
+/*  Paragraph  */
+%description {
+    font-size: 1.3rem;
+    color: #6f6e6e;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: .01rem;
+    text-align: center;
+}
+/*==================================*/
+    /*  HEADER SECTION */
+/*==================================*/
+    /*===== Logo Wrapper =====*/
+%logo {
+    width: 12rem;
+    margin-top: 2.4rem;
+}
+  /*=====Main Menu =====*/
+%menu {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    padding: .5rem 1.5rem;
+}
+  /*===== Banner Area ======*/
+%bgBanner {
+    background: url(bg-image/bg-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    position: relative;
+    height: 100vh;
+}
+%slider {
+    width: 35rem;
+    height: 30rem;
+    margin-top: 3.5rem;
+    margin-right: 4rem;
+} 
+ /*===== Banner Text =====*/
+ %promo-title {
+    margin-top: 7rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+%headDescription {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+    margin-top: 2.5rem;
+    padding-right: 5.5rem;
+}
+%bannerButton {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #615f5f;
+    background: #fff;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    margin-top: 4rem;
+}
+/*==================================*/
+    /*  ABOUT SECTION */
+/*==================================*/
+
+  /*===== Heading =====*/
+
+%heading2{
+    font-size: 2.4rem;
+    text-align: center;
+    text-transform: uppercase ;
+    letter-spacing: .1rem;
+    width: 100%;
+
+    &::after {
+        content: '';
+        background: #e64040;
+        display: block;
+        width: 6.2rem;
+        height: .5rem;
+        margin: auto;
+    }
+}
+%heading3 {
+    font-size: 2.2rem;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    margin-top: 7.5rem;
+}
+%heading4 {
+    font-size: 1.6rem;
+    color: $dark-color;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+%heading5 {
+    font-size: 1.8rem;
+    color: $dark-color;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    padding-right: 10rem;
+}
+%arrowSymbol {
+    color: #e95656;
+    font-size: 2.2rem;
+    text-align: left;
+    line-height: 2.8;
+}  
+/*==================================*/
+    /*  SERVICES SECTION */
+/*==================================*/
+ 
+%serviceDescription {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #7c7a7a;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+    padding: 0 30rem;
+    margin-top: 1.5rem;
+}
+%boxItem {
+    background: $bg-color;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    margin: 4.5rem 4rem;
+}
+%box {
+    padding: 1rem 1.5rem;
+    margin-top: 11rem;
+    padding: 0 4rem;
+}
+%boxDescription {
+    font-weight: 400;
+    line-height: 2;
+    margin: 1rem 2rem;
+}

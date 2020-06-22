@@ -1,57 +1,137 @@
-/*==================================*/
-        /*  BASIC SETUP */
-/*==================================*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html {
-    font-size: 62.5%;
-}
-body {
-    background: #fff;
-    font-family: 'Poppins', 'Open Sans', sans-serif;
-    font-size: 1.3rem;
-}
 
- /*===== HEADER SECTION =====*/
-header {
-    .navigation {
-        background: linear-gradient(to top, #7a2525, #722323);
-        .logo-wrapper {
-            margin-top: 3rem;
+/*======= IMPORT Config =======*/
+@import 'config';
+
+ /*======= HEADER SECTION =======*/
+.navigation {
+    .logo-wrapper {
+        img {
+            @extend %logo;
         }
-        .menu-bars {
-            margin-top: 2rem;
-            .menu {
-                .navbar-nav {
-                    .nav-item {
-                        margin-left: 1rem;
-                        .nav-link {
-                            font-family: 'Poppins', sans-serif;
-                            font-size: 1.6rem;
-                            font-weight: 400;
-                            color: #fff;
-                            padding: .5rem 1.5rem;
-                        }
-                    }
+    }
+    .menu-bars {
+        margin-top: 2rem;
+        .menu {
+            .nav-item {
+                margin-left: 1rem;
+                .nav-link {
+                     @extend %menu;
                 }
-                .searchbar {
-                    color: #fff;
-                    font-size: 1.8rem;
-                }
+            }
+            .searchbar {
+                color: #fff;
+                font-size: 1.8rem;
             }
         }
     }
 }
-/*===== BANNER SECTION =====*/
-#banner {
-    background: linear-gradient();
-    .promo-title {
-        font-size: 2.4rem;
-        font-weight: 500;
-        color: #fff;
-
+    /*======= BANNER =======*/
+    header {
+        @extend %bgBanner;
+   }
+.banner {   
+    .banner-text {
+        .promo-title {
+            @extend %promo-title;
+        }
+        .promo-describtion{
+             @extend %headDescription;
+        }
+        .button-top {
+            .btn {
+                @extend %bannerButton;
+            }
+            .btn-left {
+                margin-right: 3.5rem;
+            }
+        }
+    }
+    .slider-img {
+       @extend %slider;
     }
 }
+   /*======= ABOUT SECTION =======*/
+
+.about-section {
+    .section-head {
+        @extend %heading2;
+    }
+    .hThree {
+        @extend %heading3;
+    }
+    .promo-describtion{
+        @extend %headDescription;
+        color: #615f5f;
+    }
+    .hFour {
+        @extend %heading4;
+    }
+    .item-description {
+        @extend %description;
+    }
+    .arrow {
+        float: left;
+        margin-right: 3rem;
+
+        .arrow-symbol {
+            @extend %arrowSymbol;
+        }
+    }
+    .hFive {
+        @extend %heading5;
+    }
+    .item-icon {
+        img {
+            @extend %icon-img;
+            margin-top: 3rem;
+        }
+    }
+}
+
+/*======= SERVICES SECTION =======*/
+
+.services-section {
+
+    .section-head {
+        @extend %heading2;
+    }
+    .service-description {
+        @extend %serviceDescription;
+    }
+    .hFour {
+        @extend %heading4;
+    }
+    .item-icon {
+        img {
+            @extend %icon-img;
+            margin: 1rem 0;
+        }
+    }
+    .item-description {
+        @extend %description;
+    }
+    .item-box {
+        @extend %boxItem;
+
+        h4 {
+            color: #fff;
+        }
+        p {
+            @extend %boxDescription;
+            color: #fff;
+            margin: 2rem 0;
+        }
+    }
+    .boxB {
+        margin-top: 15rem;
+    }
+    .box {
+        @extend %box;
+        p {
+           @extend %boxDescription;
+        }
+    }
+}
+
+
+
